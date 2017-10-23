@@ -95,3 +95,12 @@ target_link_libraries(RGBD
 ${LIBS}
 )
 
+# Node for fpiStereo
+rosbuild_add_executable(fpiStereo
+src/fpi_stereo.cc
+)
+
+target_link_libraries(fpiStereo
+${LIBS}
+)
+
